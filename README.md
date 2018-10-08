@@ -23,7 +23,7 @@ catkin_make
 
 ## Run
 1. Start roscore
-2. In Terminal start connection to Mouse
+2. In a new terminal start the BT connection to the Mouse
 ```
 sudo rfcomm release 0 20:16:03:08:38:19
 ```
@@ -41,7 +41,7 @@ rosrun rosserial_python serial_node.py /dev/rfcomm0 _baud:=115200
 This initiates the ROS /serial_node. It is communicating via rfcomm0 as we bind it to rfcomm0 using
 the sudo rfcomm bind 0
 
-3.Start the Publisher
+3.In a third terminal, start the publisher
 ```
 cd mouse_ws/
 source devel/setup.bash
